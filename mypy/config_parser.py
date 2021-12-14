@@ -143,6 +143,7 @@ toml_config_types.update({
     'disable_error_code': try_split,
     'enable_error_code': try_split,
     'package_root': try_split,
+    'exclude': lambda s: try_split(s, "[\n]"),
 })
 
 
